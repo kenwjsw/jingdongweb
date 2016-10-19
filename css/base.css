@@ -1,0 +1,54 @@
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    /*去除移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的盒子都以边框开始计算宽度*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-size: 12px;
+    font-family: "Microsoft Ya Hei",sans-serif;
+    color: #333;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+ul,ol {
+    list-style: none;
+}
+.clearfix::before,.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.col-red {
+    color: #C81623 !important;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.border-r {
+    border-right: 1px solid #ccc;
+}
+.border-b {
+    border-bottom: 1px solid #ccc;
+}
